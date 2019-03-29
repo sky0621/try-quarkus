@@ -1,0 +1,2 @@
+gcloud container clusters create clst-pe-01 --preemptible --machine-type=f1-micro --num-nodes=3 --disk-size=10
+gcloud container node-pools create np-01 --cluster clst-pe-01 --machine-type=f1-micro --num-nodes=1 --disk-size=10
